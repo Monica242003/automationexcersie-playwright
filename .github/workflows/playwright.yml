@@ -29,6 +29,7 @@ jobs:
 
     - name: Run Playwright Cucumber Tests
       env:
+        CI: 'true'
         DEFAULT_PASSWORD: ${{ secrets.DEFAULT_PASSWORD || 'Pass1234!' }}
         CARD_NUMBER: ${{ secrets.CARD_NUMBER || '1234567890123456' }}
       run: npm test

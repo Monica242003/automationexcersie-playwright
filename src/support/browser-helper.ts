@@ -6,20 +6,19 @@ export class BrowserHelper {
   static page: Page;
 
   static async init() {
+    const isCI = process.env.CI === 'true' || process.env.HEADLESS === 'true';
     this.browser = await chromium.launch({
-      headless: false,
-      slowMo: 500 // slow mode to ensure video is clear and easy to follow
+      headless: isCI,
+      slowMo: isCI ? 0 : 500 // 500ms slowMo locally for visual demo, 0ms in CI for maximum speed
     });
 
-    // Create a single context and page for the entire test suite run
-    // This records all scenarios into a single MP4 video file!
     this.context = await this.browser.newContext({
       viewport: { width: 1280, height: 800 },
       recordVideo: {
         dir: 'reports/videos/',
         size: { width: 1280, height: 800 }
       },
-      acceptDownloads: true // necessary for TestCase 24: Download Invoice
+      acceptDownloads: true
     });
 
     this.page = await this.context.newPage();
