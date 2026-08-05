@@ -1,0 +1,44 @@
+{
+  "user": {
+    "title": "Mr.",
+    "firstName": "John",
+    "lastName": "David",
+    "name": "John David",
+    "company": "MyCompany",
+    "address1": "123 Main St",
+    "address2": "Suite 4",
+    "country": "United States",
+    "state": "California",
+    "city": "Los Angeles",
+    "zipcode": "90001",
+    "mobileNumber": "1234567890",
+    "day": "10",
+    "month": "May",
+    "year": "1990"
+  },
+  "checkoutUser": {
+    "title": "Mr.",
+    "name": "CheckoutRegister",
+    "firstName": "Checkout",
+    "lastName": "User",
+    "company": "OrderCo",
+    "address1": "456 Order Ln",
+    "address2": "Suite 100",
+    "country": "United States",
+    "state": "New York",
+    "city": "New York City",
+    "zipcode": "10001",
+    "mobileNumber": "9876543210"
+  },
+  "products": {
+    "searchItem": "Blue Top"
+  },
+  "review": {
+    "reviewerName": "Reviewer",
+    "reviewerEmail": "reviewer@example.com",
+    "reviewText": "Great product, quality matches description!"
+  },
+  "order": {
+    "comment": "Please deliver fast."
+  }
+}

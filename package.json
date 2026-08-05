@@ -1,0 +1,20 @@
+{
+  "name": "automation-exercise-playwright-cucumber",
+  "version": "1.0.0",
+  "description": "E2E automation suite using Playwright, TypeScript, and Cucumber.",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "@playwright/test": "^1.45.1",
+    "dotenv": "^17.4.2",
+    "playwright": "^1.45.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  }
+}

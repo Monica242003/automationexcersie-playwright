@@ -1,0 +1,19 @@
+{
+  "default": {
+    "requireModule": [
+      "ts-node/register"
+    ],
+    "require": [
+      "src/steps/**/*.ts",
+      "src/support/**/*.ts"
+    ],
+    "format": [
+      "html:reports/cucumber-report.html",
+      "json:reports/cucumber-report.json",
+      "summary"
+    ],
+    "paths": [
+      "features/**/*.feature"
+    ]
+  }
+}
