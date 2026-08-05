@@ -1,5 +1,7 @@
 # Playwright Cucumber Automation Suite
 
+[![Playwright Cucumber E2E Tests](https://github.com/Monica242003/automationexcersie-playwright/actions/workflows/playwright.yml/badge.svg)](https://github.com/Monica242003/automationexcersie-playwright/actions/workflows/playwright.yml)
+
 This repository contains the End-to-End (E2E) automation test suite for the [Automation Exercise](http://automationexercise.com) website. The suite is built using **Playwright**, **TypeScript**, and **Cucumber BDD**.
 
 ---
